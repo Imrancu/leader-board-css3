@@ -6,6 +6,34 @@ body {
   font-family: "Poppin", sans-serif;
   background-color: #f3f1ff;
 }
+nav {
+  width: 870px;
+  display: flex;
+  align-items: center;
+}
+.logo span {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 700;
+}
+.logo span i {
+  margin-right: 5px;
+}
+.menu-items {
+  display: flex;
+  align-items: center;
+  text-align: right;
+}
+.menu-items a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 700;
+  margin-left: 25px;
+  color: #fff;
+}
+.menu-items img {
+  margin-left: 25px;
+}
 main {
   display: flex;
   flex-direction: column;
@@ -25,12 +53,6 @@ hr {
 /* Header and Nav Style Here  */
 header {
   background-color: #562eff;
-}
-nav {
-  width: 880px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 /* Top players CSS */
 .section-title {
@@ -88,7 +110,35 @@ nav {
   color: #562eff;
 }
 /* Courses CSS */
+.courses {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 24px;
+}
 .course .course-banner img {
   width: 224px;
   height: 104px;
+}
+.course-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.course-author {
+  color: #ed8eb7;
+}
+.fa-start {
+  font-size: 12px;
+}
+.fa-star.filled {
+  color: #ffc010;
+}
+.fa-star.empty {
+  color: #aeaeae;
+}
+.course-duration {
+  background-color: #faabcd7a;
+  color: #f76faa;
+  padding: 5px 10px;
+  border-radius: 15px;
 }
