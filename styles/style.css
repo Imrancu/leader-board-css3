@@ -8,7 +8,9 @@ body {
 }
 nav {
   width: 870px;
-  display: flex;
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: repeat(2, 1fr);
   align-items: center;
 }
 .logo span {
@@ -22,7 +24,7 @@ nav {
 .menu-items {
   display: flex;
   align-items: center;
-  text-align: right;
+  margin-left: auto;
 }
 .menu-items a {
   text-decoration: none;
@@ -141,4 +143,47 @@ header {
   color: #f76faa;
   padding: 5px 10px;
   border-radius: 15px;
+}
+
+/* Responsive for all devices */
+/* Mobile devices */
+@media only screen and (max-width: 688px) {
+  .container {
+    width: 100%;
+  }
+  .section-title {
+    text-align: center;
+  }
+  nav {
+    flex-direction: column;
+  }
+  .players {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .player {
+    justify-content: center;
+    flex-direction: column;
+  }
+  .blog {
+    justify-content: center;
+    flex-direction: column;
+  }
+  .blogs {
+    grid-template-columns: repeat(1, 1fr);
+    text-align: center;
+  }
+  .blog-info {
+    margin-left: 0;
+  }
+  .courses {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .course {
+    text-align: center;
+  }
+  .course-info {
+    justify-content: center;
+  }
+}
+@media screen {
 }
